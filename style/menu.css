@@ -41,4 +41,9 @@ main { display:flex; flex-direction:column; align-items:center; width:100%; }
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
-.option:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+.option:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); 
+}
+
+body {
+  background: red !important;
+}
