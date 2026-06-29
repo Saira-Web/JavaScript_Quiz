@@ -1,0 +1,40 @@
+
+<!-- Quiz html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMaster Quiz</title>
+    <link rel="stylesheet" href="/style/quiz.css">
+</head>
+
+<body>
+
+<header>
+    <!-- <h2>MindMaster Quiz</h2> -->
+     <h2><a href="index.html" style="text-decoration: none; color: inherit;">MindMaster Quiz</a></h2>
+    <p id="level-display"></p>
+</header>
+
+<main id="quiz-container">
+
+    <div id="question-box"></div>
+
+    <div id="answers-box"></div>
+
+    <button id="next-btn" class="hidden">Next</button>
+
+    <div id="result-screen" class="hidden">
+        <h3>Your Score</h3>
+        <p id="score-text"></p>
+        <button id="retry-btn">Try Again</button>
+        <button id="menu-btn">Back to Menu</button>
+    </div>
+
+</main>
+
+<script type="module" src="quiz.js"></script>
+
+</body>
+</html>

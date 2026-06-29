@@ -1,0 +1,44 @@
+/* menu.css */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 0 0 80px 0;
+  background: #f6f9f9;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header, footer { text-align:center; padding: 12px 0; }
+
+main { display:flex; flex-direction:column; align-items:center; width:100%; }
+
+.container {
+  width: 60%;
+  max-width: 640px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.option {
+  background: rgb(218, 238, 238);
+  height: 120px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius: 15px;
+  font-size:1.2rem;
+  cursor:pointer;
+  border:1px solid black;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.option:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMaster - Choose Level</title>
+    <link rel="stylesheet" href="/style/menu.css">
+</head>
+
+<body>
+
+<header>
+    <!-- <h2>MindMaster</h2> -->
+     <h2><a href="index.html" style="text-decoration: none; color: inherit;">MindMaster Quiz</a></h2>
+    <h3>Your companion in mental wellness.</h3>
+</header>
+
+<main>
+    <h2>JavaScript Quiz</h2>
+    <h3>Select a difficulty</h3>
+
+    <div class="container">
+        <div class="option" data-level="beginner">Beginner</div>
+        <div class="option" data-level="intermediate">Intermediate</div>
+        <div class="option" data-level="pro">Pro</div>
+        <div class="option" data-level="advanced">Advanced</div>
+    </div>
+</main>
+
+<footer>
+    <p>Creators</p>
+    <p>Alejandro | Antwaun | Saira | Roland</p>
+    <p>&copy;2025 MindMaster. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelectorAll(".option").forEach(option => {
+        option.addEventListener("click", () => {
+            const level = option.dataset.level;
+            window.location.href = `quiz.html?level=${level}`;
+        });
+    });
+</script>
+
+</body>
+</html>
